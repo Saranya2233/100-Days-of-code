@@ -1,0 +1,31 @@
+/* 
+ * Name : Saranya
+ * Roll : 590041598
+ * Day : 17 Question: 34
+ * Date : 25-09-2026
+ * 
+ * PROBLEM STATEMENT:Write a program to check if a number is prime
+*/
+#include <stdio.h>
+
+int main()
+{
+    int n, i, count = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++)
+    {
+        if (n % i == 0)
+            count++;
+    }
+
+    if (count == 2)
+        printf("The number is prime.");
+    else
+        printf("The number is not prime.");
+
+    return 0;
+}
+
