@@ -1,0 +1,39 @@
+/* 
+ * Name : Saranya
+ * Roll : 590041598
+ * Day : 30 Question: 59
+ * Date : 29-10-2026
+ * 
+ * PROBLEM STATEMENT:Count even and odd numbers in an array.
+ */
+#include <stdio.h>
+
+int main()
+{
+    int n, i, even = 0, odd = 0;
+
+    printf("Enter the size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i < n; i++)
+    {
+        if(arr[i] % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    printf("Number of even elements = %d\n", even);
+    printf("Number of odd elements = %d\n", odd);
+
+    return 0;
+}
